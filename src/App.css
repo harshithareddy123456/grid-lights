@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.grid{
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.grid-active{
+  background-color: aqua;
+}
+
+.play-button{
+  margin-top: 10px;
+  background-color: aqua;
+  height: 30px;
+  width: 100px;
+  border: transparent;
+  border-radius: 10px;
+}
+
